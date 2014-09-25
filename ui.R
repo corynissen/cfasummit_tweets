@@ -1,6 +1,5 @@
 
 library(shiny)
-library(ggplot2)
 
 shinyUI(pageWithSidebar(
   
@@ -29,7 +28,7 @@ shinyUI(pageWithSidebar(
     downloadLink('downloadData', 'Download all tweets as .csv'),
     br(),
     br(),
-    HTML('The code for this dashboard is located on <a href="https://github.com/corynissen">Github</a>'),
+    HTML('The code for this dashboard is located on <a href="https://github.com/corynissen/cfasummit_tweets">Github</a>'),
     tags$p("Verson 0.1")
     ),
   
