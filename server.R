@@ -103,7 +103,7 @@ shinyServer(function(input, output, session) {
     if(selected.author != "NULL"){
       df.filtered <- subset(df, screenName==selected.author)
     }else{
-      df.filtered <- df
+      df.filtered <- df[1:200,]
     }
     tab <- subset(df.filtered, select=c("text", "created",
                                         "status_link"))
