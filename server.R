@@ -105,7 +105,7 @@ shinyServer(function(input, output, session) {
     }else{
       df.filtered <- df[1:200,]
     }
-    tab <- subset(df.filtered, select=c("text", "created",
+    tab <- subset(df.filtered, select=c("text_with_links", "created",
                                         "status_link"))
     tab$created <- as.character(tab$created)
     names(tab) <- c("Tweet Text", "Created At", "Link")
