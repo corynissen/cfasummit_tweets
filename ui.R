@@ -33,14 +33,14 @@ shinyUI(pageWithSidebar(
     ),
   
   mainPanel(
-    tabsetPanel(
-      tabPanel("Tweets",
+    tabsetPanel(id="tabset",
+      tabPanel(value="tab1", "Tweets",
                #h3(textOutput("caption")),
                tableOutput("tweet_table2")
                #plotOutput("plot"),    
                #uiOutput("tweet_table")
       ),
-      tabPanel("Authors",
+      tabPanel(value="tab2", "Authors",
                HTML('<h5>Click on Author on left to see her tweets on the right</h5>'),               
                div(class="row-fluid",
                    div(class="span3", 

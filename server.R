@@ -5,6 +5,10 @@ library(stringr)
 source('df2html.R')
 
 shinyServer(function(input, output, session) {
+  queryParams <- parseQueryString(isolate(session$clientData$url_search))
+  if ('tab' %in% names(queryParams))
+    updateTabsetPanel(session, 'tabset', selected = paste0('tab', queryParams[['tab']]))
+  
   load("df.Rdata")  
   
   ##########################################################################
