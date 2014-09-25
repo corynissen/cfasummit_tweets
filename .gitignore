@@ -9,3 +9,7 @@
 
 # RStudio files
 .Rproj.user/
+*.Rproj
+*_cred.Rdata
+df.Rdata
+.Rproj.user
