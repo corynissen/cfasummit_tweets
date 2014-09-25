@@ -1,5 +1,6 @@
 
 library(twitteR)
+library(stringr)
 
 # if creds aren't saved, run this and save them
 # creds <- scan("/home/c/cn/personal/keys/chireply_keys.txt", what="character",
